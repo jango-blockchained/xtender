@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include xtender *.css
+recursive-include xtender *.csv
+recursive-include xtender *.html
+recursive-include xtender *.ico
+recursive-include xtender *.js
+recursive-include xtender *.json
+recursive-include xtender *.md
+recursive-include xtender *.png
+recursive-include xtender *.py
+recursive-include xtender *.svg
+recursive-include xtender *.txt
+recursive-exclude xtender *.pyc
