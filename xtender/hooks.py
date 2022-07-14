@@ -13,13 +13,14 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/xtender/css/xtender.css"
+app_include_css = "/assets/xtender/css/xtender.css"
 # app_include_js = "/assets/xtender/js/xtender.js"
 app_include_js = "/assets/xtender/js/fullsize.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/xtender/css/xtender.css"
 # web_include_js = "/assets/xtender/js/xtender.js"
+
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "xtender/public/scss/website"
