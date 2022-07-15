@@ -155,13 +155,14 @@
 
 .bg-blur::before {
   content: '';
-  background-image: var(--bg-image);
+  background-image: url('../images/galaxy.jpg');
   background-size: cover;
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: -1;
-  filter: blur(30px); 
+  filter: blur(170px);
+  opacity: 0.2;
 }
 
 /* DIRECT OVERRIDE */
