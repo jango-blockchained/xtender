@@ -71,6 +71,14 @@
 
 /* <button class="btn btn-gradient-border btn-glow">Gradient Border Button</button> */
 
+.web3-glow {
+  text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px hex(#6f4cff / 24%);
+}
+
+.web3-glow-p {
+  text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+}
+
 .xtender-text-glow {
   text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
 }
@@ -175,7 +183,7 @@
 }
 
 .btn-primary:hover {
-  box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px !important;
+  box-shadow: rgba(var(--primary-color), 0.1) 0px 0px 20px 0px !important;
 }
 
 /* .btn-default {
