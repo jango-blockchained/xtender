@@ -15,11 +15,12 @@ app_license = "MIT"
 # include js, css files in header of desk.html
 app_include_css = "/assets/xtender/css/xtender.css"
 # app_include_js = "/assets/xtender/js/xtender.js"
-app_include_js = "/assets/xtender/js/fullsize.js"
+app_include_js = ["/assets/xtender/js/fullsize.js",
+                  "/assets/xtender/js/xcall.js"]
 
 # include js, css files in header of web template
 # web_include_css = "/assets/xtender/css/xtender.css"
-# web_include_js = "/assets/xtender/js/xtender.js"
+web_include_js = "/assets/xtender/js/xcall.js"
 
 
 # include custom scss in every website theme (without file extension ".scss")
@@ -154,24 +155,24 @@ app_include_js = "/assets/xtender/js/fullsize.js"
 # --------------------
 
 user_data_fields = [
-	{
-		"doctype": "{doctype_1}",
-		"filter_by": "{filter_by}",
-		"redact_fields": ["{field_1}", "{field_2}"],
-		"partial": 1,
-	},
-	{
-		"doctype": "{doctype_2}",
-		"filter_by": "{filter_by}",
-		"partial": 1,
-	},
-	{
-		"doctype": "{doctype_3}",
-		"strict": False,
-	},
-	{
-		"doctype": "{doctype_4}"
-	}
+    {
+        "doctype": "{doctype_1}",
+        "filter_by": "{filter_by}",
+        "redact_fields": ["{field_1}", "{field_2}"],
+        "partial": 1,
+    },
+    {
+        "doctype": "{doctype_2}",
+        "filter_by": "{filter_by}",
+        "partial": 1,
+    },
+    {
+        "doctype": "{doctype_3}",
+        "strict": False,
+    },
+    {
+        "doctype": "{doctype_4}"
+    }
 ]
 
 # Authentication and authorization
