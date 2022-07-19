@@ -1,15 +1,16 @@
-// import router from '@/router';
-const xrouter = frappe.get_route();
-
-export default async function xcall(method, args) {
+async function xcall(method, args) {
+	
+	// import router from '@/router';
+	// const xrouter = frappe.get_route();
 	if (!args) {
 		args = {};
 	}
 
 	let headers = {
-		Accept: 'application/json',
-		Content-Type: 'application/json; charset=utf-8',
-		X-Frappe-Site-Name: window.location.hostname
+		'Accept': 'application/json',
+		'Content-Type': 'application/json; charset=utf-8',
+		'X-Frappe-Site-Name': window.location.hostname
+
 	};
 
 	if (window.csrf_token && window.csrf_token !== '{{ csrf_token }}') {
