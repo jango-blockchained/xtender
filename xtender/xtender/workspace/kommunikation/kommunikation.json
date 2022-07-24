@@ -1,5 +1,5 @@
 {
- "category": "Modules",
+ "category": "Domains",
  "charts": [],
  "creation": "2022-07-18 05:36:10.858189",
  "developer_mode_only": 0,
@@ -72,7 +72,7 @@
    "type": "Card Break"
   }
  ],
- "modified": "2022-07-19 05:06:11.044275",
+ "modified": "2022-07-24 02:01:31.657649",
  "modified_by": "Administrator",
  "module": "Xtender",
  "name": "Kommunikation",
