@@ -10,11 +10,11 @@ async function xcall(method, args) {
 		'Accept': 'application/json',
 		'Content-Type': 'application/json; charset=utf-8',
 		'X-Frappe-Site-Name': window.location.hostname
-
+		
 	};
 
-	if (window.csrf_token && window.csrf_token !== '{{ csrf_token }}') {
-		headers['X-Frappe-CSRF-Token'] = window.csrf_token;
+	if (frappe.csrf_token && frappe.csrf_token !== '{{ csrf_token }}') {
+		headers['X-Frappe-CSRF-Token'] = frappe.csrf_token;
 	}
 
 	updateState(this, 'RequestStarted', null);
