@@ -3,6 +3,7 @@
  * @package: xtender
  */
 
+// Fullsize
 (function ($) {
   $(document).ready(function(){
 	AddFullsizeBtn();   
@@ -19,8 +20,6 @@ function AddFullsizeBtn() {
 	let parent = document.getElementById("toolbar-user");
 	parent.insertBefore(a_tag, parent.lastChild);
 }
-
-// Fullsize
 
 function GoFullsize() {
 	var sheet = document.createElement('style')
@@ -52,19 +51,18 @@ function BackToNormalView() {
 }
 
 // Fullscreen
-
 document.addEventListener("keydown", function(e) {
-  if (e.key === "°") {
-    toggleFullScreen();
-  }
+	if (e.key === "°") {
+		toggleFullScreen();
+	}
 }, false);
 
 function toggleFullScreen() {
-  if (!document.fullscreenElement) {
-      document.documentElement.requestFullscreen();
-  } else {
-    if (document.exitFullscreen) {
-      document.exitFullscreen();
-    }
-  }
+	if (!document.fullscreenElement) {
+		document.documentElement.requestFullscreen();
+	} else {
+		if (document.exitFullscreen) {
+			document.exitFullscreen();
+		}
+	}
 }
