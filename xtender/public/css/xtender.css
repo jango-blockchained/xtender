@@ -280,3 +280,8 @@
   opacity: 0.65;
   /* background-color: radient */
 }
+
+.modal-dialog {
+  max-width: 80vw !important;
+  margin: 1.75rem auto;
+}
