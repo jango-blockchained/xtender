@@ -285,3 +285,56 @@
   max-width: 80vw !important;
   margin: 1.75rem auto;
 }
+
+.arecording2s {
+  background-color: #c70039;
+  opacity: 0.85;
+  animation-name: animation_blink_2s;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-iteration-count: 2.5;
+  animation-fill-mode: both;
+}
+
+.arecording5s {
+  background-color: #c70039;
+  opacity: 0.85;
+  animation-name: animation_blink_color;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-iteration-count: 5.5;
+  animation-fill-mode: both;
+}
+.arecording2s {
+  background-color: #c70039;
+  opacity: 0.85;
+  animation-name: animation_blink_bg;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-iteration-count: 2.5;
+  animation-fill-mode: both;
+}
+
+@keyframes animation_blink_bg {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: #c70039;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes animation_blink_color {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #c70039;
+  }
+  100% {
+    color: white;
+  }
+}
